@@ -35,7 +35,7 @@
     <body>
       <head>Y</head>
       <entry type="mainEntry" xml:id="E_y_1" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">y</orth><pc>,</pc>
           <orth extent="full">Y</orth><pc>,</pc>
           <gramGrp>
@@ -60,12 +60,12 @@
         </sense>
       </entry>
       <entry xml:lang="de" type="wordFamily" xml:id="E_y_2_0">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="prefix">y-</orth><pc>:</pc>
           <gramGrp></gramGrp>
         </form>
         <entry type="relatedEntry" xml:id="E_y_2" xml:lang="de">
-          <form type="headword">
+          <form type="lemma">
             <orth expand="y-Achse" extent="suff">-=Achse</orth><pc>,</pc>
             <gramGrp>
               <gram type="pos" value="N"></gram>
@@ -81,7 +81,7 @@
         </entry>
       </entry>
       <entry type="main" xml:id="E_y_3" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">Yacht</orth><pc>,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
@@ -97,7 +97,7 @@
         </sense>
       </entry>
       <entry type="main" xml:id="E_y_4" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">Yak</orth><pc>,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
@@ -116,7 +116,7 @@
         </sense>
       </entry>
       <entry type="main" xml:id="E_y_5" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">Yoga</orth><pc>,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
@@ -132,7 +132,7 @@
         </sense>
       </entry>
       <entry type="main" xml:id="E_y_6" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">Yoghurt</orth><pc>,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
@@ -148,7 +148,7 @@
         </sense>
       </entry>
       <entry type="main" xml:id="E_y_7" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">Yogi</orth><pc>,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
@@ -164,7 +164,7 @@
         </sense>
       </entry>
       <entry type="main" xml:id="E_y_8" xml:lang="de">
-        <form type="headword">
+        <form type="lemma">
           <orth extent="full">ypsilon</orth><pc>,</pc>
           <orth extent="full">Ypsilon</orth><pc>,</pc>
           <gramGrp>
