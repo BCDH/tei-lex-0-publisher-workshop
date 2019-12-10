@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="TEILex0-ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="de">
+    <fileDesc>
+      <titleStmt>
+        <title>eWDG2-Beispiel</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Version: TEI Lex-0</edition>
+        <editor ref="https://github.com/xlhrld">Axel Herold</editor>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Digitales Wörterbuch der deutschen Sprache (DWDS)</publisher>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</publisher>
+        <pubPlace>Berlin</pubPlace>
+        <date>2019-12-09</date>
+        <availability>
+          <licence>nicht spezifiziert</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <editor>Ruth Klappenbach, Wolfgang Steinitz</editor>
+          <title>Wörterbuch der deutschen Gegenwartssprache</title>
+          <note>6 Bände</note>
+          <publisher>Akademie Verlag</publisher>
+          <pubPlace>Berlin</pubPlace>
+          <date>1967–1977</date>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text xml:lang="de">
+    <body>
+      <head>X</head>
+      <entry xml:lang="de" type="main" xml:id="E_x_1">
+        <form type="headword">
+          <orth extent="full">x</orth><pc>,</pc>
+          <orth extent="full">X</orth><pc>,</pc>
+          <gramGrp>
+            <gram type="pos" value="N"></gram>
+            <gram type="determiner">das</gram><pc>;</pc>
+            <gram type="genus" value="neuter"></gram>
+            <gram type="genitive">-</gram><pc>,</pc>
+            <gram type="plural">-</gram>
+          </gramGrp>
+        </form>
+        <sense n="1." xml:id="S_x_2">
+          <def xml:id="N_x_1">der vierundzwanzigste Buchstabe des Alphabets</def><pc>:</pc>
+          <cit type="example">
+            <quote>ein kleines, großes X</quote><pc>;</pc>
+          </cit>
+          <cit type="example">
+            <quote>ein anlautendes X</quote><pc>;</pc>
+          </cit>
+          <cit type="example">
+            <quote>das Wort wird mit x geschrieben</quote><pc>;</pc>
+          </cit>
+          <sense xml:id="S_x_2_10">
+            <pc>/</pc><usg type="meaningType" expand="übertragen">übertr.</usg><pc>;</pc>
+            <note xml:id="N_x_19">in der Wendung</note><pc>/</pc>
+            <cit type="example">
+              <quote>jmdm. ein X für ein U vormachen</quote>
+              <pc>(</pc><def>jmdn. täuschen</def><pc>)</pc>
+            </cit>
+          </sense>
+        </sense>
+        <sense n="2." xml:id="S_x_3">
+          <pc>/</pc><def xml:id="N_x_2">Bez. für einen unbekannten Namen, eine unbekannte Größe</def><pc>/</pc>
+          <cit type="example">
+            <quote>die Stadt X</quote><pc>;</pc>
+          </cit>
+          <cit type="example">
+            <quote>Herr X</quote><pc>;</pc>
+          </cit>
+          <sense xml:id="S_x_3_10">
+            <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
+            <def xml:id="N_x_3">viele, unzählige</def><pc>:</pc>
+            <cit type="example">
+              <quote>wir haben uns seit x Jahren nicht mehr gesehen</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>sie hat x Bekannte, Verpflichtungen</quote><pc>;</pc>
+            </cit>
+          </sense>
+          <sense xml:id="S_x_3_11">
+            <usg type="time" expand="Neuprägung">Neupräg.</usg>
+            <cit type="example">
+              <quote>der Tag X</quote>
+              <pc>(</pc><def>noch unbestimmter Tag, an dem etw. Entscheidendes geschehen soll</def><pc>)</pc><pc>;</pc>
+            </cit>
+          </sense>
+          <sense xml:id="S_x_3_12">
+            <usg type="domain" expand="Mathematik">Math.</usg>
+            <def xml:id="N_x_4">Zeichen für eine unbekannte oder variable Größe</def><pc>:</pc>
+            <cit type="example">
+              <quote>die unbekannte Größe x</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>einen (bestimmten) Wert für (die Größe) x einsetzen</quote>
+            </cit>
+          </sense>
+        </sense>
+      </entry>
+      <entry xml:id="E_x_2_0" xml:lang="de" type="wordFamily">
+        <form type="headword">
+          <orth>x-</orth><pc>,</pc>
+          <orth>X-</orth><pc>:</pc>
+        </form>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_2">
+          <form type="headword">
+            <orth expand="x-Achse" extent="suff">-=Achse</orth><pc>,</pc>
+            <gramGrp>
+              <gram type="pos" value="N"></gram>
+              <gram type="determiner">die</gram>
+              <gram type="genus" value="feminine"></gram>
+            </gramGrp>
+          </form>
+          <usg type="domain" expand="Mathematik">Math.</usg>
+          <sense xml:id="S_x_4">
+            <def xml:id="N_x_5">Waagerechte im Koordinatensystem</def>
+          </sense>
+        </entry>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_3">
+          <form type="headword">
+            <orth expand="X-Beine" extent="suff">-=Beine</orth><pc>,</pc>
+            <gramGrp>
+              <gram type="pos" value="N"></gram>
+              <gram type="determiner">die</gram>
+              <gram type="genus" value="feminine"></gram>
+              <pc>/</pc><gram type="plural-only">nur im Pl.</gram><pc>/</pc>
+            </gramGrp>
+          </form>
+          <sense xml:id="S_x_5">
+            <def xml:id="N_x_6">nach innen gekehrte Knie</def><pc>:</pc>
+            <cit type="example">
+              <quote>er hat X.</quote><pc>;</pc>
+            </cit>
+          </sense>
+        </entry>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_4">
+          <form type="headword">
+            <orth expand="X-beinig" extent="suff">-=beinig</orth>
+            <gramGrp>
+              <pc>/</pc><pos value="ADJ">Adj.</pos><pc>;</pc>
+            </gramGrp>
+          </form>
+          <sense xml:id="S_x_6">
+            <xr type="related">
+              <lbl>entsprechend der Bedeutung von</lbl>
+              <ref type="sense" target="#S_x_5">-=Beine</ref><pc>/</pc><pc>:</pc>
+            </xr>
+            <cit type="example">
+              <quote>ein X. Kind</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>sie läuft X.</quote><pc>;</pc>
+            </cit>
+          </sense>
+        </entry>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_5">
+          <form type="headword">
+            <orth expand="x-beliebig" extent="suff">-=beliebig</orth>
+            <gramGrp>
+              <pc>/</pc><pos value="ADJ">Adj.</pos><pc>;</pc>
+              <note xml:id="N_x_20">nur attr. u. adv.</note><pc>/</pc>
+            </gramGrp>
+          </form>
+          <sense xml:id="S_x_7">
+            <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
+            <def xml:id="N_x_7">irgendein, irgendwer, ganz gleichgültig, was oder wer</def><pc>:</pc>
+            <cit type="example">
+              <quote>ein x. Buch, Mensch</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>eine x. Zahl</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>der Ernteertrag kann nicht x. gesteigert werden</quote><pc>;</pc>
+            </cit>
+          </sense>
+        </entry>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_6">
+          <form type="headword">
+            <orth expand="x-mal" extent="suff">-=mal</orth>
+            <gramGrp>
+              <pc>/</pc><pos value="ADV">Adv.</pos><pc>/</pc>
+            </gramGrp>
+          </form>
+          <sense xml:id="S_x_8">
+            <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
+            <def xml:id="N_x_8">viele, unzählige Male</def><pc>:</pc>
+            <cit type="example">
+              <quote>etw. x. wiederholen</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>das habe ich schon x. gesagt</quote><pc>;</pc>
+            </cit>
+            <cit type="example">
+              <quote>der Teppich ist schon x. ausgebessert</quote><pc>;</pc>
+            </cit>
+          </sense>
+        </entry>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_7">
+          <form type="headword">
+            <orth expand="X-Strahlen" extent="suff">-=Strahlen</orth><pc>,</pc>
+            <gramGrp>
+              <gram type="pos" value="N"></gram>
+              <gram type="determiner">die</gram>
+              <gram type="genus" value="feminine"></gram>
+              <pc>/</pc><gram type="number" value="plural">Pl.</gram><pc>;</pc>
+              <gram type="plural-preferred">Sg. ungebräuchl.</gram><pc>/</pc>
+            </gramGrp>
+          </form>
+          <sense xml:id="S_x_9">
+            <usg type="domain" expand="Physik">Phys.</usg>
+            <usg type="time">veraltend</usg>
+            <def xml:id="N_x_9">Röntgenstrahlen</def>
+          </sense>
+        </entry>
+      </entry>
+      <entry xml:lang="de" type="main" xml:id="E_x_8">
+        <form type="headword">
+          <orth norm="Xanthippe" extent="full">Xanthịppe</orth><pc>,</pc>
+          <gramGrp>
+            <gram type="pos" value="N"></gram>
+            <gram type="determiner">die</gram><pc>;</pc>
+            <gram type="genus" value="feminine"></gram>
+            <gram type="genitive">-</gram><pc>,</pc>
+            <gram type="plural">-n</gram>
+          </gramGrp>
+        </form>
+        <sense xml:id="S_x_10">
+          <pc>/</pc><def xml:id="N_x_10">die angeblich zanksüchtige Frau des griech. Philosophen Sokrates</def><pc>;</pc>
+          <usg type="meaningType" expand="übertragen">übertr.</usg><pc>/</pc>
+          <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
+          <usg type="socioCultural">abwertend</usg>
+          <def xml:id="N_x_11">bösartiges, streitsüchtiges Weib</def><pc>:</pc>
+          <cit type="example">
+            <quote>sie ist eine richtige X.</quote>
+          </cit>
+        </sense>
+      </entry>
+      <entry xml:lang="de" type="main" xml:id="E_x_9">
+        <form type="headword">
+          <orth norm="Xerographie" extent="full">Xerographi̱e̱</orth><pc>,</pc>
+          <gramGrp>
+            <gram type="pos" value="N"></gram>
+            <gram type="determiner">die</gram><pc>;</pc>
+            <gram type="genus" value="feminine"></gram>
+            <gram type="genitive">-</gram><pc>,</pc>
+            <gram type="plural">-n</gram>
+          </gramGrp>
+          <pc>[</pc><pron>..i̱-en</pron><pc>]</pc>
+        </form>
+        <etym>
+          <pc>&lt;</pc><lang>griech.</lang><pc>&gt;</pc>
+        </etym>
+        <sense xml:id="S_x_11">
+          <usg type="time" expand="Neuprägung">Neupräg.</usg>
+          <usg type="domain">Druckerei</usg>          
+          <def xml:id="N_x_12">lichtelektrisches Vervielfältigungs- und Druckverfahren, bei dem mit Hilfe der Photographie und elektrisch aufgeladener Metallplatten die Druckfarbe trocken aufgebracht wird</def>
+        </sense>
+      </entry>
+      <entry xml:lang="de" type="main" xml:id="E_x_10">
+        <form type="headword">
+          <orth extent="full">x-fach</orth>
+          <gramGrp>
+            <pc>/</pc><pos value="ADJ">Adj.</pos><pc>/</pc>
+          </gramGrp>
+        </form>        
+        <sense xml:id="S_x_12">
+          <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
+          <def xml:id="N_x_13">vielfach, unzählige Male</def><pc>:</pc>
+          <cit type="example">
+            <quote>etw. hat sich x. bewährt</quote><pc>;</pc>
+          </cit>
+          <cit type="example">
+            <quote>ein x. erprobtes Waschmittel</quote><pc>;</pc>
+          </cit>
+          <cit type="example">
+            <quote>das Ergebnis ist x. bestätigt worden</quote><pc>;</pc>
+          </cit>
+          <cit type="example">
+            <quote>die Sammlung ergab das X-fache des Erwarteten</quote><pc>;</pc>
+          </cit>
+          <sense xml:id="S_x_12_10">
+            <usg type="domain" expand="Mathematik">Math.</usg>
+            <cit type="example"><!-- rather a construction or prototype -->
+              <quote>das X-fache</quote>
+            </cit>
+            <def xml:id="N_x_14">die mit x vervielfachte Größe, Menge</def><pc>:</pc>
+            <cit type="example">
+              <quote>das X-fache einer Zahl errechnen</quote>
+            </cit>
+          </sense>
+        </sense>
+      </entry>
+      <entry xml:lang="de" type="main" xml:id="E_x_11">
+        <form type="headword">
+          <orth extent="full">x-te</orth>
+          <gramGrp>
+            <pc>/</pc><pos value="FIG">Ord.zahl</pos><pc>;</pc>
+          </gramGrp>
+        </form>
+        <sense xml:id="S_x_13">
+          <note xml:id="N_x_21">bezeichnet eine große, unbestimmte Anzahl</note><pc>/</pc>
+          <cit type="example">
+            <quote>ich habe es dir zum x. Male gesagt</quote><pc>;</pc>
+          </cit>
+          <sense xml:id="S_x_13_10">
+            <usg type="domain" expand="Mathematik">Math.</usg>
+            <cit type="example">
+              <quote>eine Zahl in die x. Potenz erheben</quote>
+            </cit>
+          </sense>
+        </sense>
+      </entry>
+      <entry xml:lang="de" type="main" xml:id="E_x_12">
+        <form type="headword">
+          <orth norm="Xylographie" extent="full" >Xylographi̱e̱</orth><pc>,</pc>
+          <gramGrp>
+            <gram type="pos" value="N"></gram>
+            <gram type="determiner">die</gram><pc>;</pc>
+            <gram type="genus" value="feminine"></gram>
+            <gram type="genitive">-</gram><pc>,</pc>
+            <gram type="plural">-n</gram>
+          </gramGrp>
+          <pc>[</pc><pron>..ü..i̱-en</pron><pc>]</pc>
+        </form>
+        <etym>
+          <pc>&lt;</pc><lang>griech.</lang><pc>&gt;</pc>
+        </etym>        
+        <sense n="1." xml:id="S_x_15">
+          <gramGrp>
+            <pc>/</pc><gram type="singular-only">ohne Pl.</gram><pc>/</pc>
+          </gramGrp>
+          <def xml:id="N_x_15">Kunst des Holzschnitts</def>
+        </sense>
+        <sense n="2." xml:id="S_x_16">
+          <def xml:id="N_x_16">Produkt aus <xr type="related"><ref type="sense" target="#N_x_15">1</ref></xr>, Holzschnitt</def>
+        </sense>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_13">
+          <xr type="related">
+            <lbl>zu</lbl>
+            <ref type="sense" target="#N_x_15">1</ref>
+          </xr>          
+          <form type="headword">
+            <orth norm="Xylograph" extent="full">Xylogra̱ph</orth><pc>,</pc>
+            <gramGrp>
+              <gram type="pos" value="N"></gram>
+              <gram type="determiner">der</gram><pc>;</pc>
+              <gram type="genus" value="masculine"></gram>
+              <gram type="genitive">-en</gram><pc>,</pc>
+              <gram type="plural">-en</gram><pc>;</pc>
+            </gramGrp>
+          </form>
+        </entry>
+        <entry xml:lang="de" type="relatedEntry" xml:id="E_x_14">
+          <xr type="related"> <!-- note: this is an inferred link -->            
+            <ref type="sense" target="#N_x_15"></ref>
+          </xr>          
+          <form type="headword">
+            <orth norm="xylographisch" extent="full">xylogra̱phisch</orth>
+            <gramGrp>
+              <pc>/</pc><pos value="ADJ">Adj.</pos><pc>/</pc>
+            </gramGrp>
+          </form>
+        </entry>
+      </entry>      
+      <entry xml:lang="de" type="main" xml:id="E_x_15">
+        <form type="headword">
+          <orth norm="Xylophon" extent="full">Xylopho̱n</orth><pc>,</pc>
+          <gramGrp>
+            <gram type="pos" value="N"></gram>
+            <gram type="determiner">das</gram><pc>;</pc>
+            <gram type="genus" value="neuter"></gram>
+            <gram type="genitive">-s</gram><pc>,</pc>
+            <gram type="plural">-e</gram>
+          </gramGrp>
+          <pc>[</pc><pron>..ü..</pron><pc>]</pc>
+        </form>
+        <etym>
+          <pc>&lt;</pc><lang>griech.</lang><pc>&gt;</pc>
+        </etym>
+        <sense xml:id="S_x_17">
+          <def xml:id="N_x_17">Schlaginstrument, das meist aus 36 in Tonleitern bis zu 5 Oktaven abgestimmten Holzstäben besteht, die in 4 nebeneinanderliegenden Reihen angeordnet sind und mit 2 hölzernen Schlegeln angeschlagen werden</def>
+        </sense>
+      </entry>
+    </body>
+  </text>
+</TEI>
