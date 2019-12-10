@@ -49,19 +49,19 @@
         <sense n="1." xml:id="S_x_2">
           <def xml:id="N_x_1">der vierundzwanzigste Buchstabe des Alphabets</def><pc>:</pc>
           <cit type="example">
-            <quote>ein kleines, großes X</quote><pc>;</pc>
+            <quote>ein kleines, großes <oRef>X</oRef></quote><pc>;</pc>
           </cit>
           <cit type="example">
-            <quote>ein anlautendes X</quote><pc>;</pc>
+            <quote>ein anlautendes <oRef>X</oRef></quote><pc>;</pc>
           </cit>
           <cit type="example">
-            <quote>das Wort wird mit x geschrieben</quote><pc>;</pc>
+            <quote>das Wort wird mit <oRef>x</oRef> geschrieben</quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_2_10">
             <pc>/</pc><usg type="meaningType" expand="übertragen">übertr.</usg><pc>;</pc>
             <note xml:id="N_x_19">in der Wendung</note><pc>/</pc>
             <cit type="example">
-              <quote>jmdm. ein X für ein U vormachen</quote>
+              <quote>jmdm. ein <oRef>X</oRef> für ein U vormachen</quote>
               <pc>(</pc><def>jmdn. täuschen</def><pc>)</pc>
             </cit>
           </sense>
@@ -69,25 +69,25 @@
         <sense n="2." xml:id="S_x_3">
           <pc>/</pc><def xml:id="N_x_2">Bez. für einen unbekannten Namen, eine unbekannte Größe</def><pc>/</pc>
           <cit type="example">
-            <quote>die Stadt X</quote><pc>;</pc>
+            <quote>die Stadt <oRef>X</oRef></quote><pc>;</pc>
           </cit>
           <cit type="example">
-            <quote>Herr X</quote><pc>;</pc>
+            <quote>Herr <oRef>X</oRef></quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_3_10">
             <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
             <def xml:id="N_x_3">viele, unzählige</def><pc>:</pc>
             <cit type="example">
-              <quote>wir haben uns seit x Jahren nicht mehr gesehen</quote><pc>;</pc>
+              <quote>wir haben uns seit <oRef>x</oRef> Jahren nicht mehr gesehen</quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>sie hat x Bekannte, Verpflichtungen</quote><pc>;</pc>
+              <quote>sie hat <oRef>x</oRef> Bekannte, Verpflichtungen</quote><pc>;</pc>
             </cit>
           </sense>
           <sense xml:id="S_x_3_11">
             <usg type="time" expand="Neuprägung">Neupräg.</usg>
             <cit type="example">
-              <quote>der Tag X</quote>
+              <quote>der Tag <oRef>X</oRef></quote>
               <pc>(</pc><def>noch unbestimmter Tag, an dem etw. Entscheidendes geschehen soll</def><pc>)</pc><pc>;</pc>
             </cit>
           </sense>
@@ -95,10 +95,10 @@
             <usg type="domain" expand="Mathematik">Math.</usg>
             <def xml:id="N_x_4">Zeichen für eine unbekannte oder variable Größe</def><pc>:</pc>
             <cit type="example">
-              <quote>die unbekannte Größe x</quote><pc>;</pc>
+              <quote>die unbekannte Größe <oRef>x</oRef></quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>einen (bestimmten) Wert für (die Größe) x einsetzen</quote>
+              <quote>einen (bestimmten) Wert für (die Größe) <oRef>x</oRef> einsetzen</quote>
             </cit>
           </sense>
         </sense>
@@ -135,7 +135,7 @@
           <sense xml:id="S_x_5">
             <def xml:id="N_x_6">nach innen gekehrte Knie</def><pc>:</pc>
             <cit type="example">
-              <quote>er hat X.</quote><pc>;</pc>
+              <quote>er hat <oRef expand="X-Beine">X.</oRef></quote><pc>;</pc>
             </cit>
           </sense>
         </entry>
@@ -152,10 +152,10 @@
               <ref type="sense" target="#S_x_5">-=Beine</ref><pc>/</pc><pc>:</pc>
             </xr>
             <cit type="example">
-              <quote>ein X. Kind</quote><pc>;</pc>
+              <quote>ein <oRef expand="X-beiniges">X.</oRef> Kind</quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>sie läuft X.</quote><pc>;</pc>
+              <quote>sie läuft <oRef expand="X-beinig">X.</oRef></quote><pc>;</pc>
             </cit>
           </sense>
         </entry>
@@ -171,13 +171,15 @@
             <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
             <def xml:id="N_x_7">irgendein, irgendwer, ganz gleichgültig, was oder wer</def><pc>:</pc>
             <cit type="example">
-              <quote>ein x. Buch, Mensch</quote><pc>;</pc>
+              <!-- expand doesn't work here because the inflected forms differ for Buch and Mensch:
+                   ein xbeliebiges Buch, ein x-beliebiger Mensch -->
+              <quote>ein <oRef>x.</oRef> Buch, Mensch</quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>eine x. Zahl</quote><pc>;</pc>
+              <quote>eine <oRef expand="x-beliebige">x.</oRef> Zahl</quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>der Ernteertrag kann nicht x. gesteigert werden</quote><pc>;</pc>
+              <quote>der Ernteertrag kann nicht <oRef expand="x-beliebig">x.</oRef> gesteigert werden</quote><pc>;</pc>
             </cit>
           </sense>
         </entry>
@@ -192,13 +194,13 @@
             <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
             <def xml:id="N_x_8">viele, unzählige Male</def><pc>:</pc>
             <cit type="example">
-              <quote>etw. x. wiederholen</quote><pc>;</pc>
+              <quote>etw. <oRef expand="x-mal">x.</oRef> wiederholen</quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>das habe ich schon x. gesagt</quote><pc>;</pc>
+              <quote>das habe ich schon <oRef expand="x-mal">x.</oRef> gesagt</quote><pc>;</pc>
             </cit>
             <cit type="example">
-              <quote>der Teppich ist schon x. ausgebessert</quote><pc>;</pc>
+              <quote>der Teppich ist schon <oRef expand="x-mal">x.</oRef> ausgebessert</quote><pc>;</pc>
             </cit>
           </sense>
         </entry>
@@ -238,7 +240,7 @@
           <usg type="socioCultural">abwertend</usg>
           <def xml:id="N_x_11">bösartiges, streitsüchtiges Weib</def><pc>:</pc>
           <cit type="example">
-            <quote>sie ist eine richtige X.</quote>
+            <quote>sie ist eine richtige <oRef expand="Xanthippe">X.</oRef></quote>
           </cit>
         </sense>
       </entry>
@@ -274,16 +276,16 @@
           <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
           <def xml:id="N_x_13">vielfach, unzählige Male</def><pc>:</pc>
           <cit type="example">
-            <quote>etw. hat sich x. bewährt</quote><pc>;</pc>
+            <quote>etw. hat sich <oRef expand="x-fach">x.</oRef> bewährt</quote><pc>;</pc>
           </cit>
           <cit type="example">
-            <quote>ein x. erprobtes Waschmittel</quote><pc>;</pc>
+            <quote>ein <oRef expand="x-fach">x.</oRef> erprobtes Waschmittel</quote><pc>;</pc>
           </cit>
           <cit type="example">
-            <quote>das Ergebnis ist x. bestätigt worden</quote><pc>;</pc>
+            <quote>das Ergebnis ist <oRef expand="x-fach">x.</oRef> bestätigt worden</quote><pc>;</pc>
           </cit>
           <cit type="example">
-            <quote>die Sammlung ergab das X-fache des Erwarteten</quote><pc>;</pc>
+            <quote>die Sammlung ergab das <oRef>X-fache</oRef> des Erwarteten</quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_12_10">
             <usg type="domain" expand="Mathematik">Math.</usg>
@@ -292,7 +294,7 @@
             </cit>
             <def xml:id="N_x_14">die mit x vervielfachte Größe, Menge</def><pc>:</pc>
             <cit type="example">
-              <quote>das X-fache einer Zahl errechnen</quote>
+              <quote>das <oRef>X-fache</oRef> einer Zahl errechnen</quote>
             </cit>
           </sense>
         </sense>
@@ -307,12 +309,12 @@
         <sense xml:id="S_x_13">
           <note xml:id="N_x_21">bezeichnet eine große, unbestimmte Anzahl</note><pc>/</pc>
           <cit type="example">
-            <quote>ich habe es dir zum x. Male gesagt</quote><pc>;</pc>
+            <quote>ich habe es dir zum <oRef expand="x-ten">x.</oRef> Male gesagt</quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_13_10">
             <usg type="domain" expand="Mathematik">Math.</usg>
             <cit type="example">
-              <quote>eine Zahl in die x. Potenz erheben</quote>
+              <quote>eine Zahl in die <oRef expand="x-te">x.</oRef> Potenz erheben</quote>
             </cit>
           </sense>
         </sense>
