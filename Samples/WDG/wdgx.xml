@@ -14,7 +14,7 @@
         <publisher>Digitales Wörterbuch der deutschen Sprache (DWDS)</publisher>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</publisher>
         <pubPlace>Berlin</pubPlace>
-        <date>2019-12-09</date>
+        <date>2019-12-13</date>
         <availability>
           <licence>nicht spezifiziert</licence>
         </availability>
@@ -30,14 +30,24 @@
         </bibl>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <tagsDecl>        
+        <rendition scheme="css" xml:id="b">font-weight: bold;</rendition>
+        <rendition scheme="css" xml:id="c">text-align: center;</rendition>
+        <rendition scheme="css" xml:id="et">margin-left: 2em;</rendition>        
+        <rendition scheme="css" xml:id="g">letter-spacing: 0.25em;</rendition>
+        <rendition scheme="css" xml:id="i">font-style: italic;</rendition>
+        <rendition scheme="css" xml:id="larger">font-size: 120%;</rendition>                
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text xml:lang="de">
     <body>
-      <head>X</head>
+      <head rendition="#c #larger">X</head>
       <entry xml:lang="de" type="main" xml:id="E_x_1">
         <form type="lemma">
-          <orth extent="full">x</orth><pc>,</pc>
-          <orth extent="full">X</orth><pc>,</pc>
+          <orth extent="full" rendition="#b">x</orth><pc rendition="#b">,</pc>
+          <orth extent="full" rendition="#b">X</orth><pc rendition="#b">,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
             <gram type="determiner">das</gram><pc>;</pc>
@@ -46,8 +56,8 @@
             <gram type="plural">-</gram>
           </gramGrp>
         </form>
-        <sense n="1." xml:id="S_x_2">
-          <def xml:id="N_x_1">der vierundzwanzigste Buchstabe des Alphabets</def><pc>:</pc>
+        <sense n="1." xml:id="S_x_2" rendition="#et">
+          <def xml:id="N_x_1" rendition="#i">der vierundzwanzigste Buchstabe des Alphabets</def><pc>:</pc>
           <cit type="example">
             <quote>ein kleines, großes <oRef>X</oRef></quote><pc>;</pc>
           </cit>
@@ -58,16 +68,16 @@
             <quote>das Wort wird mit <oRef>x</oRef> geschrieben</quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_2_10">
-            <pc>/</pc><usg type="meaningType" expand="übertragen">übertr.</usg><pc>;</pc>
-            <note xml:id="N_x_19">in der Wendung</note><pc>/</pc>
+            <pc>/</pc><usg type="meaningType" expand="übertragen" rendition="#i">übertr.</usg><pc>;</pc>
+            <note xml:id="N_x_19" rendition="#i">in der Wendung</note><pc>/</pc>
             <cit type="example">
               <quote>jmdm. ein <oRef>X</oRef> für ein U vormachen</quote>
-              <pc>(</pc><def>jmdn. täuschen</def><pc>)</pc>
+              <pc>(</pc><def rendition="#i">jmdn. täuschen</def><pc>)</pc>
             </cit>
           </sense>
         </sense>
-        <sense n="2." xml:id="S_x_3">
-          <pc>/</pc><def xml:id="N_x_2">Bez. für einen unbekannten Namen, eine unbekannte Größe</def><pc>/</pc>
+        <sense n="2." xml:id="S_x_3" rendition="#et">
+          <pc>/</pc><def xml:id="N_x_2" rendition="#i">Bez. für einen unbekannten Namen, eine unbekannte Größe</def><pc>/</pc>
           <cit type="example">
             <quote>die Stadt <oRef>X</oRef></quote><pc>;</pc>
           </cit>
@@ -75,8 +85,8 @@
             <quote>Herr <oRef>X</oRef></quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_3_10">
-            <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
-            <def xml:id="N_x_3">viele, unzählige</def><pc>:</pc>
+            <usg type="socioCultural" expand="umgangssprachlich" rendition="#g">umg.</usg>
+            <def xml:id="N_x_3" rendition="#i">viele, unzählige</def><pc>:</pc>
             <cit type="example">
               <quote>wir haben uns seit <oRef>x</oRef> Jahren nicht mehr gesehen</quote><pc>;</pc>
             </cit>
@@ -85,15 +95,15 @@
             </cit>
           </sense>
           <sense xml:id="S_x_3_11">
-            <usg type="time" expand="Neuprägung">Neupräg.</usg>
+            <usg type="time" expand="Neuprägung" rendition="#g">Neupräg.</usg>
             <cit type="example">
               <quote>der Tag <oRef>X</oRef></quote>
-              <pc>(</pc><def>noch unbestimmter Tag, an dem etw. Entscheidendes geschehen soll</def><pc>)</pc><pc>;</pc>
+              <pc>(</pc><def rendition="#i">noch unbestimmter Tag, an dem etw. Entscheidendes geschehen soll</def><pc>)</pc><pc>;</pc>
             </cit>
           </sense>
           <sense xml:id="S_x_3_12">
-            <usg type="domain" expand="Mathematik">Math.</usg>
-            <def xml:id="N_x_4">Zeichen für eine unbekannte oder variable Größe</def><pc>:</pc>
+            <usg type="domain" expand="Mathematik" rendition="#g">Math.</usg>
+            <def xml:id="N_x_4" rendition="#i">Zeichen für eine unbekannte oder variable Größe</def><pc>:</pc>
             <cit type="example">
               <quote>die unbekannte Größe <oRef>x</oRef></quote><pc>;</pc>
             </cit>
@@ -104,36 +114,36 @@
         </sense>
       </entry>
       <entry xml:id="E_x_2_0" xml:lang="de" type="wordFamily">
-        <form type="lemma">
+        <form type="lemma" rendition="#b">
           <orth>x-</orth><pc>,</pc>
           <orth>X-</orth><pc>:</pc>
         </form>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_2">
           <form type="lemma">
-            <orth expand="x-Achse" extent="suff">-=Achse</orth><pc>,</pc>
+            <orth expand="x-Achse" extent="suff" rendition="#b">-=Achse</orth><pc rendition="#b">,</pc>
             <gramGrp>
               <gram type="pos" value="N"></gram>
               <gram type="determiner">die</gram>
               <gram type="genus" value="feminine"></gram>
             </gramGrp>
           </form>
-          <usg type="domain" expand="Mathematik">Math.</usg>
+          <usg type="domain" expand="Mathematik" rendition="#g">Math.</usg>
           <sense xml:id="S_x_4">
-            <def xml:id="N_x_5">Waagerechte im Koordinatensystem</def>
+            <def xml:id="N_x_5" rendition="#i">Waagerechte im Koordinatensystem</def><pc>;</pc>
           </sense>
         </entry>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_3">
           <form type="lemma">
-            <orth expand="X-Beine" extent="suff">-=Beine</orth><pc>,</pc>
+            <orth expand="X-Beine" extent="suff" rendition="#b">-=Beine</orth><pc rendition="#b">,</pc>
             <gramGrp>
               <gram type="pos" value="N"></gram>
               <gram type="determiner">die</gram>
               <gram type="genus" value="feminine"></gram>
-              <pc>/</pc><gram type="plural-only">nur im Pl.</gram><pc>/</pc>
+              <pc>/</pc><gram type="plural-only" rendition="#i">nur im Pl.</gram><pc>/</pc>
             </gramGrp>
           </form>
           <sense xml:id="S_x_5">
-            <def xml:id="N_x_6">nach innen gekehrte Knie</def><pc>:</pc>
+            <def xml:id="N_x_6" rendition="#i">nach innen gekehrte Knie</def><pc>:</pc>
             <cit type="example">
               <quote>er hat <oRef expand="X-Beine">X.</oRef></quote><pc>;</pc>
             </cit>
@@ -141,14 +151,14 @@
         </entry>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_4">
           <form type="lemma">
-            <orth expand="X-beinig" extent="suff">-=beinig</orth>
+            <orth expand="X-beinig" extent="suff" rendition="#b">-=beinig</orth>
             <gramGrp>
-              <pc>/</pc><pos value="ADJ">Adj.</pos><pc>;</pc>
+              <pc>/</pc><pos value="ADJ" rendition="#i">Adj.</pos><pc>;</pc>
             </gramGrp>
           </form>
           <sense xml:id="S_x_6">
             <xr type="related">
-              <lbl>entsprechend der Bedeutung von</lbl>
+              <lbl rendition="#i">entsprechend der Bedeutung von</lbl>
               <ref type="sense" target="#S_x_5">-=Beine</ref><pc>/</pc><pc>:</pc>
             </xr>
             <cit type="example">
@@ -161,15 +171,15 @@
         </entry>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_5">
           <form type="lemma">
-            <orth expand="x-beliebig" extent="suff">-=beliebig</orth>
+            <orth expand="x-beliebig" extent="suff" rendition="#b">-=beliebig</orth>
             <gramGrp>
-              <pc>/</pc><pos value="ADJ">Adj.</pos><pc>;</pc>
-              <note xml:id="N_x_20">nur attr. u. adv.</note><pc>/</pc>
+              <pc>/</pc><pos value="ADJ" rendition="#i">Adj.</pos><pc>;</pc>
+              <note xml:id="N_x_20" rendition="#i">nur attr. u. adv.</note><pc>/</pc>
             </gramGrp>
           </form>
           <sense xml:id="S_x_7">
-            <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
-            <def xml:id="N_x_7">irgendein, irgendwer, ganz gleichgültig, was oder wer</def><pc>:</pc>
+            <usg type="socioCultural" expand="umgangssprachlich" rendition="#g">umg.</usg>
+            <def xml:id="N_x_7" rendition="#i">irgendein, irgendwer, ganz gleichgültig, was oder wer</def><pc>:</pc>
             <cit type="example">
               <!-- expand doesn't work here because the inflected forms differ for Buch and Mensch:
                    ein xbeliebiges Buch, ein x-beliebiger Mensch -->
@@ -185,14 +195,14 @@
         </entry>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_6">
           <form type="lemma">
-            <orth expand="x-mal" extent="suff">-=mal</orth>
+            <orth expand="x-mal" extent="suff" rendition="#b">-=mal</orth>
             <gramGrp>
-              <pc>/</pc><pos value="ADV">Adv.</pos><pc>/</pc>
+              <pc>/</pc><pos value="ADV" rendition="#i">Adv.</pos><pc>/</pc>
             </gramGrp>
           </form>
           <sense xml:id="S_x_8">
-            <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
-            <def xml:id="N_x_8">viele, unzählige Male</def><pc>:</pc>
+            <usg type="socioCultural" expand="umgangssprachlich" rendition="#g">umg.</usg>
+            <def xml:id="N_x_8" rendition="#i">viele, unzählige Male</def><pc>:</pc>
             <cit type="example">
               <quote>etw. <oRef expand="x-mal">x.</oRef> wiederholen</quote><pc>;</pc>
             </cit>
@@ -206,25 +216,25 @@
         </entry>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_7">
           <form type="lemma">
-            <orth expand="X-Strahlen" extent="suff">-=Strahlen</orth><pc>,</pc>
+            <orth expand="X-Strahlen" extent="suff" rendition="#b">-=Strahlen</orth><pc rendition="#b">,</pc>
             <gramGrp>
               <gram type="pos" value="N"></gram>
               <gram type="determiner">die</gram>
               <gram type="genus" value="feminine"></gram>
-              <pc>/</pc><gram type="number" value="plural">Pl.</gram><pc>;</pc>
-              <gram type="plural-preferred">Sg. ungebräuchl.</gram><pc>/</pc>
+              <pc>/</pc><gram type="number" value="plural" rendition="#i">Pl.</gram><pc>;</pc>
+              <gram type="plural-preferred" rendition="#i">Sg. ungebräuchl.</gram><pc>/</pc>
             </gramGrp>
           </form>
           <sense xml:id="S_x_9">
-            <usg type="domain" expand="Physik">Phys.</usg>
-            <usg type="time">veraltend</usg>
-            <def xml:id="N_x_9">Röntgenstrahlen</def>
+            <usg type="domain" expand="Physik" rendition="#g">Phys.</usg>
+            <usg type="time" rendition="#g">veraltend</usg>
+            <def xml:id="N_x_9" rendition="#i">Röntgenstrahlen</def>
           </sense>
         </entry>
       </entry>
       <entry xml:lang="de" type="main" xml:id="E_x_8">
         <form type="lemma">
-          <orth norm="Xanthippe" extent="full">Xanthịppe</orth><pc>,</pc>
+          <orth norm="Xanthippe" extent="full" rendition="#b">Xanthịppe</orth><pc rendition="#b">,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
             <gram type="determiner">die</gram><pc>;</pc>
@@ -234,11 +244,11 @@
           </gramGrp>
         </form>
         <sense xml:id="S_x_10">
-          <pc>/</pc><def xml:id="N_x_10">die angeblich zanksüchtige Frau des griech. Philosophen Sokrates</def><pc>;</pc>
-          <usg type="meaningType" expand="übertragen">übertr.</usg><pc>/</pc>
-          <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
-          <usg type="socioCultural">abwertend</usg>
-          <def xml:id="N_x_11">bösartiges, streitsüchtiges Weib</def><pc>:</pc>
+          <pc>/</pc><def xml:id="N_x_10" rendition="#i">die angeblich zanksüchtige Frau des griech. Philosophen Sokrates</def><pc>;</pc>
+          <usg type="meaningType" expand="übertragen" rendition="#i">übertr.</usg><pc>/</pc>
+          <usg type="socioCultural" expand="umgangssprachlich" rendition="#g">umg.</usg>
+          <usg type="socioCultural" rendition="#g">abwertend</usg>
+          <def xml:id="N_x_11" rendition="#i">bösartiges, streitsüchtiges Weib</def><pc>:</pc>
           <cit type="example">
             <quote>sie ist eine richtige <oRef expand="Xanthippe">X.</oRef></quote>
           </cit>
@@ -246,7 +256,7 @@
       </entry>
       <entry xml:lang="de" type="main" xml:id="E_x_9">
         <form type="lemma">
-          <orth norm="Xerographie" extent="full">Xerographi̱e̱</orth><pc>,</pc>
+          <orth norm="Xerographie" extent="full" rendition="#b">Xerographi̱e̱</orth><pc rendition="#b">,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
             <gram type="determiner">die</gram><pc>;</pc>
@@ -257,24 +267,24 @@
           <pc>[</pc><pron>..i̱-en</pron><pc>]</pc>
         </form>
         <etym>
-          <pc>&lt;</pc><lang>griech.</lang><pc>&gt;</pc>
+          <pc>&lt;</pc><lang rendition="#i">griech.</lang><pc>&gt;</pc>
         </etym>
         <sense xml:id="S_x_11">
-          <usg type="time" expand="Neuprägung">Neupräg.</usg>
-          <usg type="domain">Druckerei</usg>          
-          <def xml:id="N_x_12">lichtelektrisches Vervielfältigungs- und Druckverfahren, bei dem mit Hilfe der Photographie und elektrisch aufgeladener Metallplatten die Druckfarbe trocken aufgebracht wird</def>
+          <usg type="time" expand="Neuprägung" rendition="#g">Neupräg.</usg>
+          <usg type="domain" rendition="#g">Druckerei</usg>          
+          <def xml:id="N_x_12" rendition="#i">lichtelektrisches Vervielfältigungs- und Druckverfahren, bei dem mit Hilfe der Photographie und elektrisch aufgeladener Metallplatten die Druckfarbe trocken aufgebracht wird</def>
         </sense>
       </entry>
       <entry xml:lang="de" type="main" xml:id="E_x_10">
         <form type="lemma">
-          <orth extent="full">x-fach</orth>
+          <orth extent="full" rendition="#b">x-fach</orth>
           <gramGrp>
-            <pc>/</pc><pos value="ADJ">Adj.</pos><pc>/</pc>
+            <pc>/</pc><pos value="ADJ" rendition="#i">Adj.</pos><pc>/</pc>
           </gramGrp>
         </form>        
         <sense xml:id="S_x_12">
-          <usg type="socioCultural" expand="umgangssprachlich">umg.</usg>
-          <def xml:id="N_x_13">vielfach, unzählige Male</def><pc>:</pc>
+          <usg type="socioCultural" expand="umgangssprachlich" rendition="#i">umg.</usg>
+          <def xml:id="N_x_13" rendition="#i">vielfach, unzählige Male</def><pc>:</pc>
           <cit type="example">
             <quote>etw. hat sich <oRef expand="x-fach">x.</oRef> bewährt</quote><pc>;</pc>
           </cit>
@@ -288,11 +298,11 @@
             <quote>die Sammlung ergab das <oRef>X-fache</oRef> des Erwarteten</quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_12_10">
-            <usg type="domain" expand="Mathematik">Math.</usg>
+            <usg type="domain" expand="Mathematik" rendition="#g">Math.</usg>
             <cit type="example"><!-- rather a construction or prototype -->
               <quote>das X-fache</quote>
             </cit>
-            <def xml:id="N_x_14">die mit x vervielfachte Größe, Menge</def><pc>:</pc>
+            <def xml:id="N_x_14" rendition="#i">die mit x vervielfachte Größe, Menge</def><pc>:</pc>
             <cit type="example">
               <quote>das <oRef>X-fache</oRef> einer Zahl errechnen</quote>
             </cit>
@@ -301,18 +311,18 @@
       </entry>
       <entry xml:lang="de" type="main" xml:id="E_x_11">
         <form type="lemma">
-          <orth extent="full">x-te</orth>
+          <orth extent="full" rendition="#b">x-te</orth>
           <gramGrp>
-            <pc>/</pc><pos value="FIG">Ord.zahl</pos><pc>;</pc>
+            <pc>/</pc><pos value="FIG" rendition="#i">Ord.zahl</pos><pc>;</pc>
           </gramGrp>
         </form>
         <sense xml:id="S_x_13">
-          <note xml:id="N_x_21">bezeichnet eine große, unbestimmte Anzahl</note><pc>/</pc>
+          <note xml:id="N_x_21" rendition="#i">bezeichnet eine große, unbestimmte Anzahl</note><pc>/</pc>
           <cit type="example">
             <quote>ich habe es dir zum <oRef expand="x-ten">x.</oRef> Male gesagt</quote><pc>;</pc>
           </cit>
           <sense xml:id="S_x_13_10">
-            <usg type="domain" expand="Mathematik">Math.</usg>
+            <usg type="domain" expand="Mathematik" rendition="#g">Math.</usg>
             <cit type="example">
               <quote>eine Zahl in die <oRef expand="x-te">x.</oRef> Potenz erheben</quote>
             </cit>
@@ -321,7 +331,7 @@
       </entry>
       <entry xml:lang="de" type="main" xml:id="E_x_12">
         <form type="lemma">
-          <orth norm="Xylographie" extent="full" >Xylographi̱e̱</orth><pc>,</pc>
+          <orth norm="Xylographie" extent="full" rendition="#b">Xylographi̱e̱</orth><pc rendition="#b">,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
             <gram type="determiner">die</gram><pc>;</pc>
@@ -332,24 +342,25 @@
           <pc>[</pc><pron>..ü..i̱-en</pron><pc>]</pc>
         </form>
         <etym>
-          <pc>&lt;</pc><lang>griech.</lang><pc>&gt;</pc>
+          <pc>&lt;</pc><lang rendition="#i">griech.</lang><pc>&gt;</pc>
         </etym>        
-        <sense n="1." xml:id="S_x_15">
+        <sense n="1." xml:id="S_x_15" rendition="#et">
           <gramGrp>
-            <pc>/</pc><gram type="singular-only">ohne Pl.</gram><pc>/</pc>
+            <pc>/</pc><gram type="singular-only" rendition="#i">ohne Pl.</gram><pc>/</pc>
           </gramGrp>
-          <def xml:id="N_x_15">Kunst des Holzschnitts</def>
+          <def xml:id="N_x_15" rendition="#i">Kunst des Holzschnitts</def>
         </sense>
-        <sense n="2." xml:id="S_x_16">
-          <def xml:id="N_x_16">Produkt aus <xr type="related"><ref type="sense" target="#N_x_15">1</ref></xr>, Holzschnitt</def>
+        <sense n="2." xml:id="S_x_16" rendition="#et">
+          <!-- actually, »1« in <ref> is typeset recte -->
+          <def xml:id="N_x_16" rendition="#i">Produkt aus <xr type="related"><ref type="sense" target="#N_x_15">1</ref></xr>, Holzschnitt</def>
         </sense>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_13">
           <xr type="related">
-            <lbl>zu</lbl>
+            <lbl rendition="#i">zu</lbl>
             <ref type="sense" target="#N_x_15">1</ref>
           </xr>          
           <form type="lemma">
-            <orth norm="Xylograph" extent="full">Xylogra̱ph</orth><pc>,</pc>
+            <orth norm="Xylograph" extent="full" rendition="#b">Xylogra̱ph</orth><pc rendition="#b">,</pc>
             <gramGrp>
               <gram type="pos" value="N"></gram>
               <gram type="determiner">der</gram><pc>;</pc>
@@ -360,20 +371,21 @@
           </form>
         </entry>
         <entry xml:lang="de" type="relatedEntry" xml:id="E_x_14">
-          <xr type="related"> <!-- note: this is an inferred link -->            
+          <xr type="related">
+            <!-- note: this is an inferred link -->            
             <ref type="sense" target="#N_x_15"></ref>
           </xr>          
           <form type="lemma">
-            <orth norm="xylographisch" extent="full">xylogra̱phisch</orth>
+            <orth norm="xylographisch" extent="full" rendition="#b">xylogra̱phisch</orth>
             <gramGrp>
-              <pc>/</pc><pos value="ADJ">Adj.</pos><pc>/</pc>
+              <pc>/</pc><pos value="ADJ" rendition="#i">Adj.</pos><pc>/</pc>
             </gramGrp>
           </form>
         </entry>
       </entry>      
       <entry xml:lang="de" type="main" xml:id="E_x_15">
         <form type="lemma">
-          <orth norm="Xylophon" extent="full">Xylopho̱n</orth><pc>,</pc>
+          <orth norm="Xylophon" extent="full" rendition="#b">Xylopho̱n</orth><pc rendition="#b">,</pc>
           <gramGrp>
             <gram type="pos" value="N"></gram>
             <gram type="determiner">das</gram><pc>;</pc>
@@ -384,10 +396,11 @@
           <pc>[</pc><pron>..ü..</pron><pc>]</pc>
         </form>
         <etym>
-          <pc>&lt;</pc><lang>griech.</lang><pc>&gt;</pc>
+          <pc>&lt;</pc><lang rendition="#i">griech.</lang><pc>&gt;</pc>
         </etym>
         <sense xml:id="S_x_17">
-          <def xml:id="N_x_17">Schlaginstrument, das meist aus 36 in Tonleitern bis zu 5 Oktaven abgestimmten Holzstäben besteht, die in 4 nebeneinanderliegenden Reihen angeordnet sind und mit 2 hölzernen Schlegeln angeschlagen werden</def>
+          <!-- actually, all numbers are typeset recte -->
+          <def xml:id="N_x_17" rendition="#i">Schlaginstrument, das meist aus 36 in Tonleitern bis zu 5 Oktaven abgestimmten Holzstäben besteht, die in 4 nebeneinanderliegenden Reihen angeordnet sind und mit 2 hölzernen Schlegeln angeschlagen werden</def>
         </sense>
       </entry>
     </body>
