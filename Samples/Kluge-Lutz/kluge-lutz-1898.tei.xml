@@ -271,7 +271,7 @@
             </etym>
           </entry>
             <dictScrap>and</dictScrap>
-            <form rendition="#b">
+            <form type="lemma" rendition="#b">
               <orth>abbey</orth>
             </form>
             <etym>
