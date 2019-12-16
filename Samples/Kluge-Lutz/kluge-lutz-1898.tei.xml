@@ -297,7 +297,7 @@
           </etym>
         </entry>
         <entry xml:id="E_a_8" type="mainEntry" xml:lang="eng">
-          <form rendition="#b">
+          <form type="lemma" rendition="#b">
             <orth>abide</orth>
           </form>
           <etym>
