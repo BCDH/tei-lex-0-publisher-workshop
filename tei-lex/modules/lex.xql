@@ -43,7 +43,11 @@ let $entries :=
             session:set-attribute($config:session-prefix || ".hits", $allEntries)
         )
 let $start :=  if ($start) then $start else 1
-let $entriesSubset := subsequence($entries, $start, $howmany)
+let $entriesSubset := 
+    if (exists($query) and $query != "") then
+        subsequence(util:expand($entries), $start, $howmany)
+    else
+        subsequence($entries, $start, $howmany)
 return (
     response:set-header("pb-total", xs:string(count($entries))),
     response:set-header("pb-start", xs:string($start)),

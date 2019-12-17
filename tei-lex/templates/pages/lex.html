@@ -62,29 +62,13 @@
                     justify-content: center;
                 }
 
-                .content-body pb-navigation {
-                    position: fixed;
-                    bottom: 45%;
-                    --paper-fab-background: #35424b;
-                    color: white;
+                #results {
+                    flex: 2;
+                    margin-left: 30px;
                 }
 
-                .content-body pb-navigation[direction=backward] {
-                    left: 20px;
-                }
-
-                .content-body pb-navigation[direction=forward] {
-                    right: 20px;
-                }
-
-                @media (max-width: 769px) {
-                    .content-body pb-navigation {
-                        display: none;
-                    }
-                }
-
-                aside {
-
+                #facets {
+                    flex: 1;
                 }
             </style>
         </custom-style>
@@ -104,11 +88,11 @@
                         <pb-search id="search-form" place-holder="Enter query"
                             action="modules/lex.xql" subscribe="search">
                             <input type="hidden" name="field" value="lemma"/>
-                            <pb-custom-form id="facets" url="modules/facets.xql" emit="search" subscribe="results" event="pb-results-received"/>
                         </pb-search>
                         <pb-paginate per-page="5" range="5" found-label="Found" subscribe="results"></pb-paginate>
                         <div class="content-body">
-                            <pb-load src="document1" url="modules/lex.xql" auto="auto" emit="results"/>
+                            <pb-load id="results" src="document1" url="modules/lex.xql" auto="auto" emit="results"/>
+                            <pb-custom-form id="facets" url="modules/facets.xql" emit="search" subscribe="results" event="pb-results-received"/>
                         </div>
                     </main>
                 </app-header-layout>
