@@ -18,7 +18,7 @@ let $entries :=
     if (exists($id)) then
         doc($config:data-root || "/" || $doc)/id($id)
     else if  (exists($query) and $query != "") then
-        doc($config:data-root || "/" || $doc)//tei:entry[ft:query(tei:form[@type='lemma']/tei:orth, $query)]
+        doc($config:data-root || "/" || $doc)//tei:entry[ft:query(., 'lemma:' || $query)]
     else
         doc($config:data-root || "/" || $doc)//tei:entry
 let $entriesSubset := subsequence($entries, $start, $howmany)

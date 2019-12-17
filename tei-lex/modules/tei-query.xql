@@ -123,6 +123,11 @@ declare function teis:autocomplete($doc as xs:string?, $fields as xs:string+, $q
                         function($key, $count) {
                             $key
                         }, 30, "lucene-index")
+            case "lemma" return
+                collection($config:data-root)/ft:index-keys-for-field("lemma", $q,
+                    function($key, $count) {
+                        $key
+                    }, 30)
             default return
                 collection($config:data-root)/ft:index-keys-for-field("title", $q,
                     function($key, $count) {

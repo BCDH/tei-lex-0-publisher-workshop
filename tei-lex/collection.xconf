@@ -17,7 +17,9 @@
             <text qname="tei:div">
                 <ignore qname="tei:div"/>
             </text>
-            <text qname="tei:orth"/>
+            <text qname="tei:entry">
+                <field name="lemma" expression="tei:form[@type='lemma']/tei:orth"/>
+            </text>
         </lucene>
     </index>
 </collection>
