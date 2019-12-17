@@ -9,12 +9,25 @@ import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at
 declare option output:method "html5";
 declare option output:media-type "text/html";
 
-<div>
-    <link rel="stylesheet" type="text/css" href="transform/tei-lex-0.css"/>
-{
-    let $doc := request:get-parameter("doc", ())
-    for $entry in doc($config:data-root || "/" || $doc)//tei:entry
-    return
-        $pm-config:web-transform($entry, map { }, $config:default-odd)
-}
-</div>
+let $id :=  request:get-parameter("lid", ())
+let $start := request:get-parameter("start", 1)
+let $howmany := request:get-parameter("howmany", 5)
+let $doc := request:get-parameter("doc", ())
+let $entries := 
+    if (exists($id)) then
+        doc($config:data-root || "/" || $doc)/id($id)
+    else
+        doc($config:data-root || "/" || $doc)//tei:entry
+let $entriesSubset := subsequence($entries, $start, $howmany)
+return (
+    response:set-header("pb-total", xs:string(count($entries))),
+    response:set-header("pb-start", xs:string($start)),
+    <div>
+        <link rel="stylesheet" type="text/css" href="transform/tei-lex-0.css"/>
+    {
+        for $entry in $entriesSubset
+        return
+            $pm-config:web-transform($entry, map { }, $config:default-odd)
+    }
+    </div>
+)

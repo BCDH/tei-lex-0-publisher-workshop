@@ -96,8 +96,11 @@
                         <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
                         <app-toolbar data-template="templates:include" data-template-path="templates/toolbar.html"/>
                     </app-header>
-                    <main class="content-body">
-                        <pb-load src="document1" url="modules/lex.xql" auto="auto"/>
+                    <main>
+                        <pb-paginate per-page="5" range="5" found-label="Found"></pb-paginate>
+                        <div class="content-body">
+                            <pb-load src="document1" url="modules/lex.xql" auto="auto"/>
+                        </div>
                     </main>
                 </app-header-layout>
             </app-drawer-layout>
