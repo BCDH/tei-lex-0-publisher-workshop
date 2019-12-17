@@ -70,7 +70,7 @@
     </pb-media-query>
 
     <!-- Search input -->
-    <pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" place-holder="i18n(search-query-attr)" redirect="redirect"/>
+    <pb-search action="templates/lex-cross-search.html" data-template="pages:parse-params" value="${query}" place-holder="i18n(search-query-attr)" redirect="redirect"/>
     <pb-media-query query="min-width: 1024px">
        <!-- language selector -->
        <pb-lang name="lang" label="Language" data-template="pages:current-language">

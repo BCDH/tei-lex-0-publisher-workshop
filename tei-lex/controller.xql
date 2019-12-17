@@ -133,7 +133,7 @@ else if (ends-with($exist:resource, ".html")) then (
     login:set-user($config:login-domain, (), false()),
     let $resource :=
         if (contains($exist:path, "/templates/")) then
-            "templates/" || $exist:resource
+            "templates/" || substring-after($exist:path, 'templates/')
         else
             $exist:resource
     return

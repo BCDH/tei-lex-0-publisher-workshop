@@ -268,7 +268,7 @@
                                     </paper-menu-button>
                                 </pb-restricted>
                                 <!-- Search input -->
-                                <pb-search action="templates/lex-cross-search.html" data-template="pages:parse-params" value="${query}" place-holder="i18n(search-query-attr)" redirect="redirect"/>
+                                <pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" place-holder="i18n(search-query-attr)" redirect="redirect"/>
 
                                 <!-- language selector -->
                                 <pb-lang name="lang" label="Language" data-template="pages:current-language">
@@ -288,7 +288,7 @@
                         <pb-media-query query="(max-width: 1023px)">
                             <app-toolbar class="toolbar" sticky="sticky">
                                 <!-- Search input -->
-                                <pb-search action="templates/lex-cross-search.html" data-template="pages:parse-params" value="${query}" place-holder="i18n(search-query-attr)" redirect="redirect"/>
+                                <pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" place-holder="i18n(search-query-attr)" redirect="redirect"/>
                                 <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
                             </app-toolbar>
                         </pb-media-query>
