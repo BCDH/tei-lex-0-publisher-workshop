@@ -10,20 +10,27 @@ declare option output:method "html5";
 declare option output:media-type "text/html";
 
 let $query := request:get-parameter("query",  ())
+let $etymFacet := request:get-parameter("facet-etymology", ())
 let $id :=  request:get-parameter("lid", ())
 let $start := request:get-parameter("start", ())
 let $howmany := request:get-parameter("howmany", 5)
 let $doc := request:get-parameter("doc", ())
-let $cached := session:get-attribute('tei-lex.hits')
+let $cached := session:get-attribute($config:session-prefix || ".hits")
+let $options := map {
+    "facets" : map {
+        "etymology": $etymFacet
+    },
+    "leading-wildcards": "yes"
+}
 let $entries := 
     if (exists($id)) then
         doc($config:data-root || "/" || $doc)/id($id)
     else if  (exists($query) and $query != "") then
         let $searchResult := 
-            doc($config:data-root || "/" || $doc)//tei:entry[ft:query(., 'lemma:' || $query)]/ancestor-or-self::tei:entry[last()]
+            doc($config:data-root || "/" || $doc)//tei:entry[ft:query(., 'lemma:' || $query, $options)]/ancestor-or-self::tei:entry[last()]
         return (
             $searchResult,
-            session:set-attribute('tei-lex.hits', $searchResult)
+            session:set-attribute($config:session-prefix || ".hits", $searchResult)
         )
     else if ($start and exists($cached) and empty($query)) then
         $cached

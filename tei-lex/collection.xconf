@@ -19,6 +19,7 @@
             </text>
             <text qname="tei:entry">
                 <field name="lemma" expression="tei:form[@type='lemma']/tei:orth"/>
+                <facet dimension="etymology" expression=".//tei:etym//tei:lang"/>
             </text>
         </lucene>
     </index>

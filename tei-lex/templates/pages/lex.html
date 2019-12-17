@@ -102,16 +102,38 @@
                     </app-header>
                     <main>
                         <pb-search id="search-form" place-holder="Enter query"
-                            action="modules/lex.xql">
+                            action="modules/lex.xql" subscribe="search">
                             <input type="hidden" name="field" value="lemma"/>
+                            <pb-custom-form id="facets" url="modules/facets.xql" emit="search" subscribe="results" event="pb-results-received"/>
                         </pb-search>
                         <pb-paginate per-page="5" range="5" found-label="Found"></pb-paginate>
                         <div class="content-body">
-                            <pb-load src="document1" url="modules/lex.xql" auto="auto"/>
+                            <pb-load src="document1" url="modules/lex.xql" auto="auto" emit="results"/>
                         </div>
                     </main>
                 </app-header-layout>
             </app-drawer-layout>
         </pb-page>
+        <script>
+            const facets = document.getElementById('facets');
+            if (facets) {
+                facets.addEventListener('pb-custom-form-loaded', function(ev) {
+                    const elems = ev.detail.querySelectorAll('.facet');
+                    elems.forEach(function(facet) {
+                        facet.addEventListener('change', function() {
+                            const table = facet.closest('table');
+                            if (table) {
+                                const nested = table.querySelectorAll('.nested .facet').forEach(function(nested) {
+                                    if (nested != facet) {
+                                        nested.checked = false;
+                                    }
+                                });
+                            }
+                            facets._submit();
+                        });
+                    });
+                });
+            }
+        </script>
     </body>
 </html>
