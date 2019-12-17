@@ -9,6 +9,7 @@ import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at
 declare option output:method "html5";
 declare option output:media-type "text/html";
 
+let $query := request:get-parameter("query",  ())
 let $id :=  request:get-parameter("lid", ())
 let $start := request:get-parameter("start", 1)
 let $howmany := request:get-parameter("howmany", 5)
@@ -16,6 +17,8 @@ let $doc := request:get-parameter("doc", ())
 let $entries := 
     if (exists($id)) then
         doc($config:data-root || "/" || $doc)/id($id)
+    else if  (exists($query) and $query != "") then
+        doc($config:data-root || "/" || $doc)//tei:entry[ft:query(tei:form[@type='lemma']/tei:orth, $query)]
     else
         doc($config:data-root || "/" || $doc)//tei:entry
 let $entriesSubset := subsequence($entries, $start, $howmany)
