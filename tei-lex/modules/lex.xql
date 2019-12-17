@@ -25,7 +25,7 @@ let $entries :=
             $searchResult,
             session:set-attribute('tei-lex.hits', $searchResult)
         )
-    else if ($start and exists($cached)) then
+    else if ($start and exists($cached) and empty($query)) then
         $cached
     else
         doc($config:data-root || "/" || $doc)//tei:entry
