@@ -20,7 +20,8 @@ let $options := map {
     "facets" : map {
         "etymology": $etymFacet
     },
-    "leading-wildcards": "yes"
+    "leading-wildcard": "yes",
+    "filter-rewrite": "yes"
 }
 let $entries := 
     if (exists($id)) then
@@ -35,7 +36,12 @@ let $entries :=
     else if ($start and exists($cached) and empty($query)) then
         $cached
     else
-        doc($config:data-root || "/" || $doc)//tei:entry
+        let $allEntries :=
+            doc($config:data-root || "/" || $doc)//tei:entry[ft:query(., "lemma:*", $options)]/ancestor-or-self::tei:entry[last()]
+        return (
+            $allEntries,
+            session:set-attribute($config:session-prefix || ".hits", $allEntries)
+        )
 let $start :=  if ($start) then $start else 1
 let $entriesSubset := subsequence($entries, $start, $howmany)
 return (
